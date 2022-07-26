@@ -5,7 +5,7 @@ const data = [
   },
   {
     id: 2,
-    region: "America",
+    region: "Americas",
   },
   {
     id: 3,

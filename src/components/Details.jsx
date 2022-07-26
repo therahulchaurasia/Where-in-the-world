@@ -3,11 +3,11 @@ import React from "react";
 const Details = (props) => {
   console.log();
   return (
-    <div className="w-4/5 mx-auto shadow-md z-10">
+    <div className="w-4/5 mx-auto rounded-md shadow-md z-10 dark:text-white dark:bg-blue-1000 transition ease-linear delay-150">
       <img
-        src={props.country.flags.svg}
+        src={props.country.flags.png}
         alt=""
-        className="w-full h-44 rounded-t-md pb-4 "
+        className="w-full h-52 rounded-t-md pb-4 object-fill"
       />
       <div className="px-6">
         <h1 className="font-extrabold text-2xl pb-2">

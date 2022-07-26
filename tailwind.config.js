@@ -17,6 +17,20 @@ module.exports = {
           1000: "#111517", //light-mode text
         },
       },
+      keyframes: {
+        anim: {
+          "0%": { transform: "rotate(45deg) translate(5px, 5px)" },
+          "100%": { transform: "rotate(45deg) translate(-5px,-5px)" },
+        },
+        shadow: {
+          "0%": { transform: "scale(0.5)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        animaker: "anim 0.4s ease-in-out infinite alternate",
+        shadowmaker: "shadow 0.4s ease-in-out infinite alternate",
+      },
     },
   },
   plugins: [],
