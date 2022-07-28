@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Details = (props) => {
   console.log();
   return (
-    <div className="w-4/5 mx-auto rounded-md shadow-md z-10 dark:text-white dark:bg-blue-1000 transition ease-linear delay-150 h-96">
+    <Link
+      to={`/country/${props.country.cca3}`}
+      className="w-4/5 mx-auto rounded-md shadow-md z-10 dark:text-white dark:bg-blue-1000 transition ease-linear delay-150 h-96"
+    >
       <img
         src={props.country.flags.png}
         alt=""
@@ -25,7 +29,7 @@ const Details = (props) => {
           {props.country.capital}
         </h5>
       </div>
-    </div>
+    </Link>
   );
 };
 
