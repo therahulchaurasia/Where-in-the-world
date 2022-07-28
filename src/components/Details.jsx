@@ -3,7 +3,7 @@ import React from "react";
 const Details = (props) => {
   console.log();
   return (
-    <div className="w-4/5 mx-auto rounded-md shadow-md z-10 dark:text-white dark:bg-blue-1000 transition ease-linear delay-150">
+    <div className="w-4/5 mx-auto rounded-md shadow-md z-10 dark:text-white dark:bg-blue-1000 transition ease-linear delay-150 h-96">
       <img
         src={props.country.flags.png}
         alt=""
@@ -13,11 +13,17 @@ const Details = (props) => {
         <h1 className="font-extrabold text-2xl pb-2">
           {props.country.name.common}
         </h1>
-        <h5 className="font-semibold pb-2">
-          Population: {props.country.population}
+        <h5 className=" pb-2">
+          <span className="font-semibold">Population:</span>{" "}
+          {props.country.population}
         </h5>
-        <h5 className="font-semibold pb-2">Region: {props.country.region}</h5>
-        <h5 className="font-semibold pb-8">Capital: {props.country.capital}</h5>
+        <h5 className=" pb-2">
+          <span className="font-semibold">Region:</span> {props.country.region}
+        </h5>
+        <h5 className="pb-8">
+          <span className="font-semibold">Capital:</span>
+          {props.country.capital}
+        </h5>
       </div>
     </div>
   );

@@ -2,7 +2,8 @@ import React from "react";
 
 const Navbar = () => {
   const darkMode = () => {
-    const a = document.getElementById("root");
+    const a = document.querySelector("html");
+    // console.log(a);
     a.classList.toggle("dark");
   };
   return (
