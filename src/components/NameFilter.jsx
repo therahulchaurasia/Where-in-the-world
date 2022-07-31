@@ -9,7 +9,7 @@ const NameFilter = (props) => {
       <input
         type="text"
         placeholder="Search for a country..."
-        className="p-4 w-full outline-none dark:bg-blue-1000 dark:placeholder:text-white dark:text-white dark:caret-cyan-500 lg:w-96 transition ease-linear delay-150"
+        className="p-4 w-full outline-none dark:bg-blue-1000 dark:placeholder:text-white dark:text-white dark:caret-cyan-500 caret-pink-500 lg:w-96 transition ease-linear delay-150"
         // value={inputValue}
         ref={searchValue}
         onChange={(e) => {

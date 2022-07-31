@@ -8,6 +8,7 @@ import RegionFilter from "./components/RegionFilter";
 import NameFilter from "./components/NameFilter";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SingleCountry from "./components/SingleCountry";
+import Error from "./components/Error";
 
 const App = () => {
   const [countries, setCountries] = useState([]);
@@ -91,6 +92,7 @@ const App = () => {
             }
           />
           <Route path="/country/:id" element={<SingleCountry />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </BrowserRouter>

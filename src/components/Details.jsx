@@ -25,7 +25,7 @@ const Details = (props) => {
           <span className="font-semibold">Region:</span> {props.country.region}
         </h5>
         <h5 className="pb-8">
-          <span className="font-semibold">Capital:</span>
+          <span className="font-semibold">Capital: </span>
           {props.country.capital}
         </h5>
       </div>
