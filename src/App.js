@@ -36,6 +36,7 @@ const App = () => {
   };
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line
   }, [value]);
   const toggleFilter = () => {
     setFilterToggle(!filterToggle);
