@@ -13,50 +13,51 @@ const SingleCountry = () => {
   let a = "";
   let b = "";
   let c = "";
-  const fetchData = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch(`${url}${id}`);
-      const data = await response.json();
-      console.log(data);
-      if (data) {
-        const {
-          name,
-          population,
-          region,
-          subregion,
-          capital,
-          tld,
-          currencies,
-          languages,
-          flags,
-          borders,
-        } = data[0];
-        const countryObj = {
-          name,
-          population,
-          region,
-          subregion,
-          capital,
-          tld,
-          currencies,
-          languages,
-          flags,
-          borders,
-        };
-        setCountry(countryObj);
-        console.log(countryObj);
-        setLoading(false);
-      } else {
-        setCountry(null);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
   useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(`${url}${id}`);
+        const data = await response.json();
+        // console.log(data);
+        if (data) {
+          const {
+            name,
+            population,
+            region,
+            subregion,
+            capital,
+            tld,
+            currencies,
+            languages,
+            flags,
+            borders,
+          } = data[0];
+          const countryObj = {
+            name,
+            population,
+            region,
+            subregion,
+            capital,
+            tld,
+            currencies,
+            languages,
+            flags,
+            borders,
+          };
+          setCountry(countryObj);
+          // console.log(countryObj);
+          setLoading(false);
+        } else {
+          setCountry(null);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
     fetchData();
-  }, []);
+  }, [id]);
   return (
     <section className="w-11/12 mx-auto">
       <div className="w-28 py-2 px-6 shadow-md dark:bg-blue-1000 rounded-md mb-10 lg:mb-20 transition ease-linear delay-150 2xl:mb-44">
@@ -98,8 +99,9 @@ const SingleCountry = () => {
                       return item.official;
                     }
                     if (typeof item == "string") {
-                      return index == 0 ? item : "";
+                      return index === 0 ? item : "";
                     }
+                    return "";
                   }))
                 }
               </h5>

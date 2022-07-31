@@ -37,9 +37,6 @@ const App = () => {
   useEffect(() => {
     fetchData();
   }, [value]);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
   const toggleFilter = () => {
     setFilterToggle(!filterToggle);
   };
