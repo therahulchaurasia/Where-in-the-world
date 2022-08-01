@@ -58,8 +58,9 @@ const SingleCountry = () => {
     };
     fetchData();
   }, [id]);
+
   return (
-    <section className="w-11/12 mx-auto">
+    <section className="w-11/12 mx-auto 2xl:max-w-screen-2xl">
       <div className="w-28 py-2 px-6 shadow-md dark:bg-blue-1000 rounded-md mb-10 lg:mb-20 transition ease-linear delay-150 2xl:mb-44">
         <Link
           to="/"
