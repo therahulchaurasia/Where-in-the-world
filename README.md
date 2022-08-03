@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode _(optional)_
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<table>
+<tr>
+<td><b style="font-size:20px">Design</b></td>
+<td><b style="font-size:20px">Desktop</b></td>
+</tr>
+<tr>
+<td>
+  <img src="./design/desktop-design-home-light.jpg" alt="desktop-home-light-design" width="70%"/>
+  <img src="./design/desktop-design-home-dark.jpg" alt="desktop-home-dark-design" width="70%"/>
+  <img src="./design/desktop-design-detail-light.jpg" alt="desktop-detail-light-design" width="70%"/>
+  <img src="./design/desktop-design-detail-dark.jpg" alt="desktop-detail-dark-design" width="70%"/>
+</td>
+<td>
+  <img src="./src/Screenshots/desktop-home-light.png" alt="desktop-home-light" width="70%">
+  <img src="./src/Screenshots/desktop-home-dark.png" alt="desktop-home-dark" width="70%">
+  <img src="./src/Screenshots/desktop-filter.png" alt="desktop-region-filter" width="70%">
+  <img src="./src/Screenshots/desktop-input.png" alt="desktop-input" width="70%">
+  <img src="./src/Screenshots/desktop-more_details.png" alt="desktop-more-details" width="70%">
+</td>
+</tr>
+<tr>
+<td><b style="font-size:20px">Mobile Design</b></td>
+<td><b style="font-size:20px">Mobile </b></td>
+</tr>
+<tr>
+<td>
+  <img src="./design/mobile-design-home-light.jpg" alt="mobile-home-light-design" width="40%"/>
+  <img src="./design/mobile-design-home-dark.jpg" alt="mobile-home-dark-design" width="40%"/>
+  <img src="./design/mobile-design-detail-light.jpg" alt="mobile-detail-light-design" width="70%"/>
+  <img src="./design/mobile-design-detail-dark.jpg" alt="mobile-detail-dark-design" width="70%"/>
+</td>
+<td>
+ <img src="./src/Screenshots/mobile-home-light.png" alt="desktop-home-light" width="70%">
+  <img src="./src/Screenshots/mobile-home-dark.png" alt="desktop-home-dark" width="70%">
+  <img src="./src/Screenshots/mobile-filter.png" alt="desktop-region-filter" width="70%">
+  <img src="./src/Screenshots/mobile-input.png" alt="desktop-input" width="70%">
+  <img src="./src/Screenshots/mobile-more-details.png" alt="desktop-more-details" width="70%">
+</td>
+</tr>
+<tr>
+<td><b style="font-size:20px">Tablet</b></td>
+</tr>
+<tr>
+<td>
+<img src="./src/Screenshots/tablet-home-light.png" alt="tablet-home-light" widht="70%"/>
+<img src="./src/Screenshots/tablet-home-dark.png" alt="tablet-home-dark" widht="70%"/>
+<img src="./src/Screenshots/tablet-more-details.png" alt="tablet-more-details" widht="70%"/>
+</td>
+</tr>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</table>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [Github Repo](https://github.com/therahulchaurasia/Where-in-the-world)
+- Live Site URL: [Netlify Hosting](https://countries-fm-rc.netlify.app)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [TailwindCSS](https://tailwindcss.com/) - CSS Framework
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+I was able to pair up React and Tailwind together to create a powerful combination, which made this challenging project exciting and I learned a lot while building the web application. I was able to understand the features that hooks bring along with them as I created function-based components. I styled those components with Tailwind with reference to their documentation (which is a really helpful one). I was able to learn routing as well while building the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+! Worth Mentioning !
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The custom loader that [Loader.jsx].
+The animation for the custom loader [tailwind.config.js]
+```
 
-### Code Splitting
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+One of the things I would like to do is to redirect to a different page when clicked on a border-country. Furthermore, I could improve some styles on the details page.
 
-### Analyzing the Bundle Size
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Tailwind CSS](https://tailwindcss.com/) - Concise and clear documentation about tailwind which is beginner-friendly whereas can be used by a professional as well. I really like it and will use it going forward.
+- [React Docs](https://reactjs.org/docs/getting-started.html) - To learn more about react.
+- [MDN Docs](https://developer.mozilla.org/en-US/) - Looked for some object properties whild building the project.
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend Mentor - [@therahulchaurasia](https://www.frontendmentor.io/profile/therahulchaurasia)
